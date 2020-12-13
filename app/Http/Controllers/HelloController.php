@@ -5,10 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\HelloRequest;
 use Validator;
+=======
+use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
   
+
    public function index(Request $request)
    {
        if ($request->hasCookie('msg'))
@@ -35,4 +38,4 @@ class HelloController extends Controller
     }
 
 }
-
+  
