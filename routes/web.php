@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('person', 'PersonController@index');
+
+Route::get('person/find', 'PersonController@find');
+Route::post('person/find', 'PersonController@search');
