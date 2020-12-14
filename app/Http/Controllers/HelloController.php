@@ -5,11 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\HelloRequest;
 use Validator;
-=======
+use Illuminate\Support\Facades\DB;
+
+
+
 use Illuminate\Http\Response;
+
 
 class HelloController extends Controller
 {
+
+
+
+
   
 
    public function index(Request $request)
@@ -22,6 +30,7 @@ class HelloController extends Controller
        }
        return view('hello.index', ['msg'=> $msg]);
    }
+
 
     public function post(Request $request)
     {

@@ -20,4 +20,5 @@ class Myrule implements Rule
     {
         return $this->num . 'で割り切れる値が必要です。';
     }
+
 }
