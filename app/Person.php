@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 
+
 class Person extends Model
 {
     public function getData()
@@ -25,6 +26,7 @@ public function scopeAgeLessThan($query, $n)
    return $query->where('age', '<=', $n);
 }
 
+
 protected static function boot()
 {
    parent::boot();
@@ -33,5 +35,6 @@ protected static function boot()
        $builder->where('age', '>', 20);
    });
 }
+
 
 }
