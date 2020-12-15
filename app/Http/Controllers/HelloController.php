@@ -43,5 +43,10 @@ class HelloController extends Controller
         return $response;
     }
 
+    public function rest(Request $request)
+    {
+    return view('hello.rest');
+    }
+
 }
   
